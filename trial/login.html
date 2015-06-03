@@ -1,0 +1,212 @@
+<html>
+	<head>
+			<!-- Latest compiled and minified CSS -->
+			<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"/>
+
+			<!-- jQuery library -->
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+			<!-- Latest compiled JavaScript -->
+			<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+			<meta charset="utf-8"> 
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Message</title>
+		<style>
+			.rowf
+			{
+				clear:both;
+				padding-top:10px;
+	
+			}
+
+			.labelf
+			{
+			float:left;
+			width : 100px;
+			text-align:right;
+			}
+
+			.formw
+			{
+			float:right
+			width:350px;
+			text-align:left;
+			}
+			#header{
+				position: absolute;
+				z-index: 2000;
+				width: 235px;
+				top: 50px;
+				background-color: #ffcb00;
+
+			}
+			#header h1{
+				font-size: 30px;
+				font-weight: 400;
+				text-transform: uppercase;
+				color: rgba(255,255,255,0.9);
+				text-shadow: 0px 1px 1px rgba(0,0,0,0.3);
+				padding: 20px;
+				background: #000;
+			}
+			#navigation {
+				margin-top: 20px;
+				width: 235px;
+				display:block;
+				list-style:none;
+				z-index:3;
+			}
+			#navigation a{
+				color: #444;
+				display: block;
+				background: #fff;
+				background: rgba(0,0,0,0.3);
+				line-height: 50px;
+				padding: 0px 20px;
+				text-transform: uppercase;
+				margin-bottom: 6px;
+				box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+				font-size: 14px;
+			}
+			#navigation a:hover {
+				background: #ddd;
+			}
+		
+			.panel{
+				min-width: 100%;
+				height: 98%;
+				overflow-y: auto;
+				overflow-x: hidden;
+				margin-top: -150%;
+				position: absolute;
+				background: #000;
+				box-shadow: 0px 4px 7px rgba(0,0,0,0.6);
+				z-index: 2;
+				-webkit-transition: all .8s ease-in-out;
+				-moz-transition: all .8s ease-in-out;
+				-o-transition: all .8s ease-in-out;
+				transition: all .8s ease-in-out;
+			}
+			.panel:target{
+				margin-top: 0%;
+				background-color: #ffcb00;
+			}
+			.level2{
+				right: 40px;
+				left: 280px;
+				top: 0px;
+				position: absolute;
+				padding-bottom: 30px;
+			}
+			.level2 h2{
+				font-size: 110px;
+				padding: 10px 0px 20px 0px;
+				margin-top: 52px;
+				color: #fff;
+				color: rgba(255,255,255,0.9);
+				text-shadow: 0px 1px 1px rgba(255,0,0,0.3);
+			}
+			.level2 p{
+				font-size: 18px;
+				padding: 10px;
+				line-height: 24px;
+				color: #fff;
+				display: inline-block;
+				background: black;
+				padding: 10px;
+				margin: 3px 0px;
+			}
+			#welcome:target ~ #header #navigation #link-welcome,
+			#level1:target ~ #header #navigation #link-level1,
+			#about:target ~ #header #navigation #link-about,
+			#level3:target ~ #header #navigation #link-level3{
+				background: #000;
+				color: #fff;
+			}	
+		</style>
+	</head>
+	<body style="background:url('pics/office.jpg') no-repeat;   
+			-webkit-background-size: cover;
+  			-moz-background-size: cover;
+  			-o-background-size: cover;
+ 			 background-size: cover;">	
+		<nav class="navbar navbar-inverse navbar-fixed-top" style="font-size:15px">
+	  		
+		   			<div class="navbar-header">
+		     				<a class="navbar-brand" href="index.html">Home</a>
+		    			</div>
+			    		
+				     		 <ul class="nav navbar-nav">
+							<li><a href="who.html">  Who are we ? </a></li>
+							<li><a href="gallery.html"> Photo Gallery </a></li> 
+			 
+				      		</ul>
+						<ul class="nav navbar-nav navbar-right">
+						<div class ="btn-group" style="right:7px;top:7px">
+							<a href="signup.html">	
+							<button type="button-lg" class="btn btn-primary">
+					   			<span class="glyphicon glyphicon-envelope"></span> Sign Up 				 								</button>	
+							</a>					
+								<a href="#.html">						
+									<button type="button-lg" class="btn btn-primary">
+							   			<span class="glyphicon glyphicon-log-in"></span> Log In 
+							 		</button>
+								</a>
+						</div>
+						</ul>
+		    			</div>
+		 	 
+		</nav>
+	
+		<!--Welcome Page -->
+		<div id="welcome" class="panel">
+			<div class = "level2">
+				<h2>Welcome</h2>
+				<p>If you are already a registered user just log in and porceed</p><br/>
+
+			</div>
+			<!-- ... -->
+		</div>
+		<!-- /welcome -->
+
+		<!-- level1 -->
+		<div id="level1" class="panel">
+			<div class="level2">
+				<h2>Log-in information</h2>
+				<p> Enter the required fields and select Log-in Button</p><br/>
+				<p>
+					<span class="rowf">
+						<span class="labelf">Name:</span>
+						<span class="formw"><input type="text"></span>
+					</span><br/>
+					<span class="rowf">
+						<span class="labelf">e-mail ID</span>
+						<span class="formw"><input type="text"></span>
+					</span><br/>
+					<span class="rowf">
+						<span class="labelf">password</span>
+						<span class="formw"><input type="password"></span>
+					</span>
+				</p><br/>
+				<!-- ... -->
+									<button type="button-lg" class="btn btn-primary">
+							   			<span class="glyphicon glyphicon-log-in"></span> Log In 
+							 		</button>
+			</div>
+		</div>
+		<!-- /level3 -->
+
+		<!-- Header with Navigation -->
+		<div id="header">
+			<h1> Log-In and proceed to your account</h1>
+			<ul id="navigation">
+				<li><a id="link-welcome" href="#welcome">Welcome</a></li>
+				<li><a id="link-level1" href="#level1">Log In</a></li>
+
+			</ul>
+
+		</div>
+	</body>
+</html>
