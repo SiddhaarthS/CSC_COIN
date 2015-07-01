@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtLabel"
+         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="16dp"
+        android:text="This Event tracking system helps you to track events such as culturals, symposiums,workshops,FDP for both students and faculties. Provides you additional functionalities such as Notifications on the Event date."/>
+    
+    <ImageView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtLabel"
+        android:src="@drawable/help"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+    
+
+</RelativeLayout>

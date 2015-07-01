@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ecf0f1">
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout">
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:src="@drawable/ic_launch"
+            android:layout_gravity="center_horizontal"
+         />
+    </LinearLayout>
+        <Button android:id="@+id/btnSaveEvent"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:layout_weight="1"
+            android:layout_alignParentBottom="true"
+            android:background="#16a085"
+        />
+    <!-- Name Label -->
+    <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/linearLayout"
+    android:layout_above="@id/btnSaveEvent"
+       >
+        <LinearLayout android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Employee Name:"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingTop="10dip"
+            android:textSize="17dip"
+            android:textStyle="bold"
+
+            />
+
+        <!-- Input Name -->
+        <TextView android:id="@+id/inputName"
+            android:layout_width="304dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:layout_marginBottom="15dip"
+            android:layout_marginLeft="5px"
+            android:textSize="17dip"
+            android:layout_gravity="center_horizontal"
+
+            />
+
+        <!-- Price Label -->
+        <TextView android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="JoinDate:"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingTop="10dip"
+            android:textSize="17dip"
+            android:textStyle="bold"
+
+            />
+
+        <!-- Input Price -->
+        <TextView android:id="@+id/inputPrice"
+            android:layout_width="304dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:layout_marginBottom="15dip"
+            android:singleLine="true"
+            android:textSize="17dip"
+            android:layout_gravity="center_horizontal"
+           />
+
+        <!-- Description Label -->
+        <TextView android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Dept:"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingTop="10dip"
+            android:textSize="17dip"
+            android:textStyle="bold"
+             />
+
+        <!-- Input description -->
+        <TextView android:id="@+id/inputDesc"
+            android:layout_width="304dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:layout_marginBottom="15dip"
+            android:gravity="top"
+            android:textSize="17dip"
+            android:layout_gravity="center_horizontal"
+
+            />
+            <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Project:"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:paddingTop="10dip"
+                android:textSize="17dip"
+                android:textStyle="bold"
+
+                 />
+            <TextView android:id="@+id/category"
+                android:layout_width="304dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:layout_marginBottom="15dip"
+                android:singleLine="true"
+                android:textSize="17dip"
+                android:layout_gravity="center_horizontal"
+                />
+
+            <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Events:"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:paddingTop="10dip"
+                android:textSize="17dip"
+                android:textStyle="bold"
+
+                 />
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:shrinkColumns="*">
+                <TableRow>
+            <TextView android:id="@+id/events"
+                android:layout_width="304dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:layout_marginBottom="15dip"
+                android:singleLine="true"
+                android:textSize="17dip"
+                android:layout_gravity="center_horizontal"
+                />
+        </TableRow>
+    </TableLayout>
+            <TextView android:layout_width="325dp"
+                android:layout_height="wrap_content"
+                android:text="Website:"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:paddingTop="10dip"
+                android:textSize="17dip"
+                android:textStyle="bold"
+
+                />
+            <TextView android:id="@+id/website"
+                android:layout_width="304dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:layout_marginBottom="15dip"
+                android:singleLine="true"
+                android:textSize="17dip"
+                android:layout_gravity="center_horizontal"
+                />
+            <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="State:"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:paddingTop="10dip"
+                android:textSize="17dip"
+                android:textStyle="bold"
+
+                />
+            <TextView android:id="@+id/state"
+                android:layout_width="304dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:layout_marginBottom="15dip"
+                android:singleLine="true"
+                android:textSize="17dip"
+                android:layout_gravity="center_horizontal"
+                />
+            <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="District:"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:paddingTop="10dip"
+                android:textSize="17dip"
+                android:textStyle="bold"
+
+                />
+            <TextView android:id="@+id/district"
+                android:layout_width="304dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:layout_marginBottom="15dip"
+                android:singleLine="true"
+                android:textSize="17dip"
+                android:layout_gravity="center_horizontal"
+                />
+
+        <!-- Description Label -->
+        <TextView android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Contact:"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingTop="10dip"
+            android:textSize="17dip"
+            android:textStyle="bold"
+         />
+
+            <TextView android:id="@+id/contactname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:layout_marginBottom="15dip"
+                android:gravity="top"
+                android:textSize="17dip"
+                />
+            <!-- Input description -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            <TextView android:id="@+id/contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:layout_marginBottom="15dip"
+                android:gravity="top"
+                android:textSize="17dip"
+                android:layout_weight="4"
+               />
+
+            <Button android:id="@+id/btnCall"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:text="call"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+
+                />
+
+            </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
+
+</RelativeLayout>

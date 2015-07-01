@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/home/sesha/Documents/SlidingMenu/app/libs/gcm.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="a6d7bce795a14c7f86111756c4ceb44b79de14aa">
+        <dex dex="/home/sesha/Documents/SlidingMenu/app/build/intermediates/pre-dexed/debug/gcm-a78b97eb3c953027a984c0264a671efc7a4eb06c.jar" />
+    </item>
+    <item
+        jar="/home/sesha/android-sdks/extras/android/m2repository/com/android/support/support-v4/18.0.0/support-v4-18.0.0.jar"
+        jumboMode="false"
+        revision="21.1.1"
+        sha1="44ec51e9d395a47aab135e5e1b556c0007442156">
+        <dex dex="/home/sesha/Documents/SlidingMenu/app/build/intermediates/pre-dexed/debug/support-v4-18.0.0-4fd46dbeda68086027f6927fb724283e299e70d4.jar" />
+    </item>
+
+</items>
